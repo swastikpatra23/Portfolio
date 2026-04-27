@@ -1,0 +1,159 @@
+﻿<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Swastik Patra - UI/UX & Graphic Design</title>
+<meta name="description" content="A premium, visual portfolio website showcasing UI/UX and graphic design work." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="index">
+
+<!-- LOADER -->
+<div id="loader" class="loader">
+  <div class="loader-row">
+    <div class="loader-label">Swastik - Portfolio</div>
+    <div class="loader-count" id="loader-count">000</div>
+  </div>
+  <div class="loader-bar"><div id="loader-fill"></div></div>
+</div>
+
+<!-- CURSOR -->
+<div id="cursor-dot" class="cursor-dot"></div>
+<div id="cursor-ring" class="cursor-ring"><span class="cursor-label">View</span></div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" data-cursor="link">SWASTIK<span>.</span></a>
+    <nav>
+      <a href="index.html" class="nav-link active" data-cursor="link">Index</a>
+      <a href="work.html" class="nav-link" data-cursor="link">Work</a>
+      <a href="contact.html" class="nav-link" data-cursor="link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="grain">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="floats">
+      <div class="float f1 hover-pop float-slow" data-parallax="0.15" data-cursor="view">
+        <img src="chai-sutta-bar-cover.jpg" alt="" />
+        <span class="tag">UI/UX</span>
+      </div>
+      <div class="float f2 hover-pop float-slower" data-parallax="0.30" data-cursor="view">
+        <img src="poster-mehdi-hassan.png" alt="" />
+        <span class="tag">Poster</span>
+      </div>
+      <div class="float f3 hover-pop float-slow" data-parallax="0.22" data-cursor="view">
+        <img src="aternos-cover.jpg" alt="" />
+        <span class="tag">UI/UX</span>
+      </div>
+      <div class="float f4 hover-pop float-slower" data-parallax="0.12" data-cursor="view">
+        <img src="poster-irfan-khan.png" alt="" />
+        <span class="tag">Poster</span>
+      </div>
+    </div>
+
+    <div class="container hero-text">
+      <h1 class="text-mega hero-reveal">PORTFOLIO</h1>
+      <div class="scroll-hint">Scroll to explore</div>
+    </div>
+  </section>
+
+  <!-- VISUAL PLAYGROUND -->
+  <section class="playground">
+    <div class="container">
+      <div class="reveal section-head">
+        <div class="eyebrow">Selected Visuals</div>
+        <h2 class="text-display">A visual<br/>playground.</h2>
+      </div>
+    </div>
+    <div class="play-stage">
+      <div class="play p1 hover-pop float-slow" data-parallax="0.18" data-cursor="view">
+        <img src="poster-4.png" alt="" />
+        <span class="tag">Poster</span>
+      </div>
+      <div class="play p2 hover-pop float-slower" data-parallax="0.32" data-cursor="view">
+        <img src="poster-5.png" alt="" />
+        <span class="tag">Poster</span>
+      </div>
+      <div class="play p3 hover-pop float-slower" data-parallax="0.25" data-cursor="view">
+        <img src="poster-shree-krishna.png" alt="" />
+        <span class="tag">Poster</span>
+      </div>
+      <div class="play p4 hover-pop float-slow" data-parallax="0.40" data-cursor="view">
+        <img src="poster-mehdi-hassan.png" alt="" />
+        <span class="tag">Poster</span>
+      </div>
+      <div class="play p5 hover-pop float-slower" data-parallax="0.22" data-cursor="view">
+        <img src="poster-irfan-khan.png" alt="" />
+        <span class="tag">Poster</span>
+      </div>
+      <div class="play-word" data-parallax="0.08" data-parallax-axis="x">
+        <div class="text-mega ghost">MAKE / SHIP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee-wrap">
+    <div class="marquee-track" id="marquee"></div>
+  </section>
+
+  <!-- SELECTED WORKS -->
+  <section class="selected" id="selected">
+    <div class="container selected-inner">
+      <div class="selected-sidebar">
+        <div class="reveal selected-head">
+          <div>
+            <div class="eyebrow">Selected</div>
+            <h2 class="text-display">Selected<br/>works.</h2>
+          </div>
+          <a href="work.html" class="btn-ghost desktop-only" data-cursor="link">View archive</a>
+        </div>
+        <div class="selected-work-row">
+          <nav class="selected-menu" id="selected-menu" aria-label="Selected projects"></nav>
+          <div class="selected-carousel-wrap">
+            <div class="selected-carousel" id="selected-carousel" tabindex="0"></div>
+          </div>
+        </div>
+        <div class="mobile-only center mt-16">
+          <a href="work.html" class="btn-ghost">View archive</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT TEASER -->
+  <section class="contact-teaser">
+    <div class="container center">
+      <div class="eyebrow reveal">Open for projects</div>
+      <a href="contact.html" class="reveal block teaser-link" data-cursor="view">
+        <h2 class="text-mega tight">Let's<br/><span class="italic">work</span> together.</h2>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="copy">(c) <span id="year"></span> - Swastik</div>
+      <div class="socials">
+        <a href="https://www.instagram.com/thedesignkarta/" target="_blank" rel="noopener" data-cursor="link">Instagram</a>
+        <a href="https://www.behance.net/swastikpatra23" target="_blank" rel="noopener" data-cursor="link">Behance</a>
+        <a href="https://dribbble.com/swastikwm" target="_blank" rel="noopener" data-cursor="link">Dribbble</a>
+        <a href="https://www.linkedin.com/in/swastik-patra-65b227393/" target="_blank" rel="noopener" data-cursor="link">LinkedIn</a>
+      </div>
+      <a href="contact.html" class="get-touch" data-cursor="link">Get in touch</a>
+    </div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+

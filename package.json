@@ -1,0 +1,17 @@
+{
+  "name": "swastik-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static portfolio website for Swastik Patra.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check script.js && node --check server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "ui-ux",
+    "graphic-design",
+    "static-site"
+  ],
+  "license": "UNLICENSED"
+}
